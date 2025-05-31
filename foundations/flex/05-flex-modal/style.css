@@ -16,6 +16,32 @@ body {
 }
 
 .modal {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.big-text {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+.modal {
   background: white;
   width: 480px;
   border-radius: 10px;
