@@ -6,8 +6,9 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: 75px 50px 1fr 75px;
+  grid-template-rows: 100px 50px 1fr 75px;
   grid-template-columns: minmax(150px, 1fr) 5fr;
+  gap: 3px;
 }
 
 .container div {
@@ -21,11 +22,34 @@
 .header {
   background-color: #393f4d;
   grid-column: 1 / 6;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 1 / 2;
+}
+
+.menu{
+  grid-column: 2 / 3;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+}
+
+.menu ul {
+  list-style-type: none;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.menu li {
+  grid-column: auto;
 }
 
 .sidebar {
