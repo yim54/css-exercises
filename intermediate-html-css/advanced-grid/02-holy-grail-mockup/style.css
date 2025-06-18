@@ -6,7 +6,7 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: 100px 50px 1fr 75px;
+
   grid-template-columns: minmax(150px, 1fr) 5fr;
   gap: 3px;
 }
@@ -24,7 +24,7 @@
   grid-column: 1 / 6;
 
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
@@ -36,8 +36,6 @@
 
 .menu{
   grid-column: 2 / 3;
-  width: 80%;
-  justify-self: end;
 }
 
 .menu ul,
@@ -63,7 +61,7 @@
 
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  gap: 20px
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -87,9 +85,18 @@
   grid-column: 2 / 6;
 }
 
+.nav ul {
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
+  grid-column: auto;
 }
 
 .article {
